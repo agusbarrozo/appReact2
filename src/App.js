@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar'
 import { Button } from 'reactstrap';
-
+import ListContainer from './components/ListContainer';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         </a>
       </header>
       <NavBar />
+      <ListContainer />
     </div>
   );
 }

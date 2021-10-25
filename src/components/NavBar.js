@@ -13,6 +13,8 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import { Button } from 'reactstrap';
+import CartWidget from './CartWidget';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +42,9 @@ const NavBar = (props) => {
             </NavItem>
             <NavItem>
               <NavLink href="/components/">get in touch</NavLink>
+            </NavItem>          
+            <NavItem>
+              <Button outline color="secondary"><CartWidget /></Button>{' '}
             </NavItem>
           </Nav>
         </Collapse>
