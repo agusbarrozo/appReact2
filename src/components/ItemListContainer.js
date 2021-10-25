@@ -16,14 +16,14 @@ Greeting.propTypes = {
 
 import React, { Component } from "react";
 
-export class ListContainer extends Component {
+export class ItemListContainer extends Component {
       render(){
         return(
           <div>
-          Hola soy un componente
+          <h3>*listado de items a reemplazar*</h3> 
           </div>
         )
       }
 }
 
-export default ListContainer 
+export default ItemListContainer 

@@ -1,32 +1,6 @@
-/*import { IoIosCart } from 'react-icons/fa';
-
-class Question extends React.Component {
-    render() {
-        return <h3> Lets go for a <FaBeer />? </h3>
-    }
-}
-export default CartWidget 
-*/
-/*
-import React, { Component } from 'react';
-import logo from '..../';
-export default class Header extends Component {
-  render() {
-    return (
-      <div className="row">
-        <div className="logo">
-          <img src={logo} width="100" height="50" />
-        </div>
-      </div>
-    );
-  }
-} 
-
-export default CartWidget
-*/
+//importe una libreria de react icons para poder poner el icono del cart
 import React, { useState } from 'react';
-import { BsCart4 } from "react-icons/bs";
-
+import { BsCart4 } from "react-icons/bs"; //este es el icono que importe
 
 class CartWidget extends React.Component {
   render() {
@@ -35,6 +9,5 @@ class CartWidget extends React.Component {
     ) 
   }
 }
-
 
 export default CartWidget
