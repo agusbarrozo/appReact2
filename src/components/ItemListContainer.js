@@ -19,7 +19,9 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
+import Item from './Item';
 import { ItemCount } from './ItemCount';
+import ItemList from './ItemList';
 
 
 
@@ -34,12 +36,13 @@ const ItemListContainer = (props) => {
       <Card>
         <CardImg top width="50%" src="/assets/318x180.svg" alt="Item #1 image" />
         <CardBody>
-          <CardTitle tag="h5">Item #1</CardTitle>
+          <CardTitle tag="h5">Test #1</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">*item description*</CardSubtitle>
-          <CardText>*general characteristics from item*</CardText>
+          <CardText>*prueba del desafio*</CardText>
           <ItemCount stock={25} initial={1} onAdd={handleClick} />
         </CardBody>
       </Card>
+      <ItemList />
     </div>
   );
 };
