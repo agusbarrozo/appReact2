@@ -1,6 +1,6 @@
+import { ItemDetailContainer } from './components/containers/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/containers/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar'
-import { Button } from 'reactstrap';
-import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       </header>
       <NavBar />
       <ItemListContainer />
+      <ItemDetailContainer />
     </div>
   );
 }

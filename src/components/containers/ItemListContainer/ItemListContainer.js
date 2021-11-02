@@ -1,31 +1,14 @@
-//GREETING VIEJO DEL DESAFIO #3
-/*import React, { Component } from "react";
-
-export class ItemListContainer extends Component {
-      render(){
-        return(
-          <div>
-          <h3>*listado de items a reemplazar*</h3> 
-          </div>
-        )
-      }
-}
-
-export default ItemListContainer 
-*/
-
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  CardTitle, CardSubtitle, 
 } from 'reactstrap';
-import Item from './Item';
-import { ItemCount } from './ItemCount';
-import ItemList from './ItemList';
+import { ItemCount } from '../../ItemCount';
+import ItemList from '../../ItemList';
 
 
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const handleClick=(total) =>{
     alert(`La cantidad agregada es ${total}`)
     console.log(`Se agregaron al carrito ${total} items`)

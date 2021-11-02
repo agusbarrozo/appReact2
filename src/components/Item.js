@@ -1,34 +1,9 @@
 import React from 'react';
-import { Component, useEffect, useState } from 'react';
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
     CardSubtitle, CardBody
   } from 'reactstrap';
 import CartWidget from './CartWidget';
-
-/* OBJETOS - ITEMS DEL CATALOGO
-// funcion constructora
-function productos(nombre, precio, stock){
-    this.nombre = nombre;
-    this.precio = precio;
-    this.stock = stock;
-}
-
-// los productos HOME
-const home1 = new productos("Tray", 6000, 25);
-const home2 = new productos("Ashtray", 7500, 25);
-const home3 = new productos("Grinder", 4500, 25);
-
-// los productos TRAVEL
-const travel1 = new productos("Pouch", 2250, 25);
-const travel2 = new productos("Capsule storage", 1800, 25);
-const travel3 = new productos("4-Piece Grinder", 6000, 25);
-
-// los productos EVERYDAY
-const everyday1 = new productos("Keychain", 3000, 25);
-const everyday2 = new productos("Infinity Card", 1500, 25);
-const everyday3 = new productos("Rolling papers", 600, 25);
-*/
 
 const productos = [
     { id: 1, name: "Tray", price: 6000, stock: 25 },
@@ -82,7 +57,7 @@ const Item = () => {
     )
 }    
 */
-const Item = (props) => {
+const Item = () => {
         return (
             productos.map(prod=> 
             <CardGroup>

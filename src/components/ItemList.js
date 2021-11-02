@@ -1,14 +1,10 @@
 import React from 'react';
-import { Component, useEffect, useState } from 'react';
-import { ThemeProvider } from 'react-bootstrap';
-import {
-    Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody
-  } from 'reactstrap';
 import Item from './Item';
 
 /* ----HACER CARDS DE PRODUCTOS CON LOS NOMBRES DE PRODUCTOS---- PERO APLICANDO .MAP
 */
+
+/* PROMISE Y EL DELAY DE 3 SEGUNDOS A TRAVES DE ALERT PARA EL DESAFIO
 
 const getFetch = new Promise((resolve, reject)=>{
   //aca van las tareas asincronicas
@@ -22,8 +18,9 @@ const getFetch = new Promise((resolve, reject)=>{
       alert('delay de 3 segundos');
   }, 3000);
 })
+*/
 
-const ItemList = (props) => {
+const ItemList = () => {
     return(
       <Item />
     )
