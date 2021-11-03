@@ -1,10 +1,11 @@
+import {useParams} from 'react-router-dom'
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, 
 } from 'reactstrap';
 import { ItemCount } from '../../ItemCount';
-import ItemList from '../../ItemList';
+import ItemList from '../../Item';
 
 
 
@@ -13,6 +14,10 @@ const ItemListContainer = () => {
     alert(`La cantidad agregada es ${total}`)
     console.log(`Se agregaron al carrito ${total} items`)
   }
+
+  const {id} = useParams()
+
+  console.log(id);
 
   return (
     <div>
