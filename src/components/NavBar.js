@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -8,9 +8,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap';
-import { Button } from 'reactstrap';
-import CartWidget from './CartWidget';
+} from "reactstrap";
+import { Button } from "reactstrap";
+import CartWidget from "./CartWidget";
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,10 +25,10 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-            <NavLink href="/components/">about us</NavLink>
+              <NavLink href="/components/">about us</NavLink>
             </NavItem>
             <NavItem>
-              <Link to='/category'>products</Link>
+              <Link to="/category">products</Link>
             </NavItem>
             <NavItem>
               <NavLink href="/components/">find a store</NavLink>
@@ -38,15 +38,19 @@ const NavBar = (props) => {
             </NavItem>
             <NavItem>
               <NavLink href="/components/">get in touch</NavLink>
-            </NavItem>          
+            </NavItem>
             <NavItem>
-              <Link to={'/cart'}><Button outline color="secondary"><CartWidget /></Button>{' '}</Link>
+              <Link to={"/cart"}>
+                <Button outline color="secondary">
+                  <CartWidget />
+                </Button>{" "}
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
     </div>
   );
-}
+};
 
 export default NavBar;

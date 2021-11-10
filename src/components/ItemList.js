@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import React from 'react';
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
@@ -65,7 +64,7 @@ const ItemList = () => {
             <Card>
               <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
               <CardBody>
-                <NavLink to='/item'> <CardTitle tag="h5"> {prod.name} </CardTitle> </NavLink>
+                <CardTitle tag="h5"> {prod.name} </CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted"> ${prod.price} </CardSubtitle>
                 <CardText>* Product #1 description *</CardText>
                 <Button><CartWidget /></Button>
